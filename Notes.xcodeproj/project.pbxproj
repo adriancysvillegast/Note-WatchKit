@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0940D9C32AAA76DD00ABD584 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940D9C22AAA76DD00ABD584 /* DetailView.swift */; };
+		0940D9C52AAA7CCE00ABD584 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940D9C42AAA7CCE00ABD584 /* CreditsView.swift */; };
+		0940D9C82AAA7D5200ABD584 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940D9C72AAA7D5200ABD584 /* HeaderView.swift */; };
+		0940D9CA2AAA85D400ABD584 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940D9C92AAA85D400ABD584 /* SettingsView.swift */; };
 		09D1BB4D2AA66B39002B1210 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 09D1BB4C2AA66B39002B1210 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		09D1BB522AA66B3D002B1210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1BB512AA66B3D002B1210 /* Assets.xcassets */; };
 		09D1BB582AA66B3E002B1210 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09D1BB572AA66B3E002B1210 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +19,7 @@
 		09D1BB612AA66B3E002B1210 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1BB602AA66B3E002B1210 /* ComplicationController.swift */; };
 		09D1BB632AA66B40002B1210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1BB622AA66B40002B1210 /* Assets.xcassets */; };
 		09D1BB662AA66B40002B1210 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1BB652AA66B40002B1210 /* Preview Assets.xcassets */; };
+		09D1BB782AA66DEC002B1210 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1BB772AA66DEC002B1210 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0940D9C22AAA76DD00ABD584 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0940D9C42AAA7CCE00ABD584 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		0940D9C72AAA7D5200ABD584 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0940D9C92AAA85D400ABD584 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		09D1BB482AA66B38002B1210 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D1BB4C2AA66B39002B1210 /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D1BB512AA66B3D002B1210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 		09D1BB622AA66B40002B1210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D1BB652AA66B40002B1210 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09D1BB672AA66B40002B1210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D1BB772AA66DEC002B1210 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0940D9C62AAA7D2B00ABD584 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0940D9C72AAA7D5200ABD584 /* HeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		09D1BB412AA66B38002B1210 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +131,9 @@
 		09D1BB5B2AA66B3E002B1210 /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				09D1BB5C2AA66B3E002B1210 /* ContentView.swift */,
+				0940D9C62AAA7D2B00ABD584 /* Component */,
+				09D1BB762AA66DD4002B1210 /* Model */,
+				09D1BB752AA66DBF002B1210 /* View */,
 				09D1BB5E2AA66B3E002B1210 /* NotesApp.swift */,
 				09D1BB602AA66B3E002B1210 /* ComplicationController.swift */,
 				09D1BB622AA66B40002B1210 /* Assets.xcassets */,
@@ -129,6 +149,25 @@
 				09D1BB652AA66B40002B1210 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09D1BB752AA66DBF002B1210 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09D1BB5C2AA66B3E002B1210 /* ContentView.swift */,
+				0940D9C22AAA76DD00ABD584 /* DetailView.swift */,
+				0940D9C42AAA7CCE00ABD584 /* CreditsView.swift */,
+				0940D9C92AAA85D400ABD584 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09D1BB762AA66DD4002B1210 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09D1BB772AA66DEC002B1210 /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +299,12 @@
 			files = (
 				09D1BB5D2AA66B3E002B1210 /* ContentView.swift in Sources */,
 				09D1BB5F2AA66B3E002B1210 /* NotesApp.swift in Sources */,
+				0940D9CA2AAA85D400ABD584 /* SettingsView.swift in Sources */,
 				09D1BB612AA66B3E002B1210 /* ComplicationController.swift in Sources */,
+				0940D9C52AAA7CCE00ABD584 /* CreditsView.swift in Sources */,
+				0940D9C32AAA76DD00ABD584 /* DetailView.swift in Sources */,
+				09D1BB782AA66DEC002B1210 /* Note.swift in Sources */,
+				0940D9C82AAA7D5200ABD584 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
